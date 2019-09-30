@@ -1,13 +1,94 @@
+<!-- HW5 Trivia Game Advanced -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>HW5 Trivia Game Advanced</title>
 </head>
-<body>
-    <h1>This game is under construction.</h1><br><br>
-    <p>Site will be updated soon.</p>
+
+<body background="assets/images/sunsetImage.jpeg">
+    <div class="mainContainer">
+        <button type="button" class="btn btn-lg btn-block fixed-top" id="gameTitle">Trivia Game Advanced</button>
+        <button type="button" class="btn btn-lg btn-block fixed-bottom" id="timeRemaining">Time Remaining&nbsp;
+            <span id="timeDisplay"></span></button>
+    </div>
+    <br><br><br><br>
+    <div id="startBtnContainer">
+        <br><br><br><br>
+        <button id="startBtn">&nbsp;&nbsp;Start&nbsp;&nbsp;</button>
+    </div>
+    <div id="questionContainer">
+        <p id="questionLabel"></p><br>
+        <button type="button" class="choices btn btn-lg btn-block" id="choice1"></button>
+        <button type="button" class="choices btn btn-lg btn-block" id="choice2"></button>
+        <button type="button" class="choices btn btn-lg btn-block" id="choice3"></button>
+        <button type="button" class="choices btn btn-lg btn-block" id="choice4"></button>
+        <button type="button" class="choices btn btn-lg btn-block" id="choice5"></button>
+    </div>
+    <div id="tempResultContainer">
+        <p id="tempResultLabel1"></p>
+        <p id="tempResultLabel2"><span id="tempCorrectAnswerLabel2"></span>&nbsp;is the correct
+            answer<span>.</span>
+        </p>
+        <p id="tempResultLabel3">The correct answer is&nbsp;<span id="tempCorrectAnswerLabel3"></span><span>.</span>
+        </p>
+        <div class="answerImage">
+            <img src="assets/images/solarSystem.jpg" id="answerImage1" style="width: 300px;">
+        </div>
+        <div class="answerImage">
+            <img src="assets/images/watermelon.jpg" id="answerImage2" style="width: 300px;">
+        </div>
+        <div class="answerImage">
+            <img src="assets/images/homerSimpson.jpg" id="answerImage3" style="width: 300px;">
+        </div>
+        <div class="answerImage">
+            <img src="assets/images/gordonRamsay.jpeg" id="answerImage4" style="width: 300px;">
+        </div>
+        <div class="answerImage">
+            <img src="assets/images/boeing767Airplane.jpg" id="answerImage5" style="width: 300px;">
+        </div>
+        <div class="answerImage">
+            <img src="assets/images/texasInUSmap.jpg" id="answerImage6" style="width: 300px;">
+        </div>
+        <div class="answerImage">
+            <img src="assets/images/numberComparison.jpg" id="answerImage7" style="width: 300px;">
+        </div>
+    </div>
+    <div id="scoreReportContainer">
+        <p id="reportLabel1">Score Report</p>
+        <p id="reportLabel2">Correct Answers:&nbsp;<span id="numCorrect"></span>
+            &nbsp;(&nbsp;<span id="numCorrectPercent"></span>&nbsp;%&nbsp;)</p>
+        <p id="reportLabel3">Incorrect Answers:&nbsp;<span id="numIncorrect"></span>
+            &nbsp;(&nbsp;<span id="numIncorrectPercent"></span>&nbsp;%&nbsp;)</p>
+        <p id="reportLabel4">Unanswered:&nbsp;<span id="numUnanswered"></span>
+            &nbsp;(&nbsp;<span id="numUnansweredPercent"></span>&nbsp;%&nbsp;)</p>
+    </div>
+    <br><br><br><br>
+
+    <div id="answerContainer">
+        <div class="answerImage">
+            <img src="" id="answerImage" style="width: 300px;">
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/app.js"></script>
 </body>
+
 </html>

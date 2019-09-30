@@ -1,0 +1,61 @@
+/* HW6 Trivia Game Advanced */
+.mainContainer, #questionContainer, #scoreReportContainer {
+    width: 700px;
+    margin: 10px auto;
+}
+#gameTitle, #timeRemaining {
+    width: 700px;
+    margin: 10px auto;
+    font-family: monospace;
+    font-size: 2.5rem;
+    background-color: orange;
+    opacity: 0.95;
+}
+#startBtn {
+    display: block;
+    margin: 0 auto;
+    color: white;
+    font-size: 10rem;
+    border-radius: 10px;
+    background-color: rgb(28, 148, 72);
+}
+#questionLabel {
+    font-size: 2rem;
+}
+.choices {
+    width: 400px;
+    font-size: 1.5 rem;
+    margin: 0 auto;
+    background-color: #04c6b9;
+    opacity: 0.9;
+}
+#tempResultLabel1, #tempResultLabel2, #tempResultLabel3, .answerImage {
+    text-align: center;
+}
+#tempResultContainer {
+    font-size: 2rem;
+}
+
+#reportLabel1 {
+    font-size: 3rem;
+}
+#reportLabel2 {
+    color: rgb(38, 130, 38);
+    font-size: 2rem;
+}
+#reportLabel3 {
+    color: rgb(187, 35, 35);
+    font-size: 2rem;
+}
+#reportLabel4 {
+    color: rgb(233, 96, 45);
+    font-size: 2rem;
+}
+/* #doneBtn {
+    display: block;
+    margin: 0 auto;
+    color: white;
+    font-size: 2rem;
+    border-radius: 5px;
+    background-color: rgb(172, 22, 67);
+} */
